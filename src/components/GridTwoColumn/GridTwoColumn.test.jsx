@@ -1,13 +1,11 @@
-import { GridTwoColumn } from '.';
 import { renderTheme } from '../../styles/render-theme';
+import { GridTwoColum } from '.';
 
 import mock from './mock';
 
-describe('<GridTwoColumn />', () => {
+describe('<GridTwoColum />', () => {
   it('should render two column grid', () => {
-    const { container } = renderTheme(<GridTwoColumn {...mock} />);
+    const { container } = renderTheme(<GridTwoColum {...mock} />);
     expect(container).toMatchSnapshot();
   });
 });
-
-// Tem algum erro no snapshot (undefined:1:441: missing '}')
